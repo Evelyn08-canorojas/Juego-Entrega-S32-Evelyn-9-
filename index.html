@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego</title>
+</head>
+<body>
+	<style>
+@font-face{
+	font-family: letra1;
+	src: url(letra1.ttf);
+}
+@font-face{
+	font-family: letra2;
+	src: url(letra2.ttf);
+}
+@font-face{
+	font-family: letra3;
+	src: url(letra3.otf);
+}
+        body{
+        	background-image: url(fondo3.jpg);
+        	background-size: cover;
+        }
+		.b1{
+			position: absolute;
+			top: 250px;
+			left: 1150px;
+			width: 190px;
+			height: 70px;
+			background-color: #FFE0F3;
+			border-color: #DB96BF;
+			border-width: 3px;
+			border-style: solid;
+		}
+		.tex1{
+			position: absolute;
+			top: -75px;
+			left: 20px;
+			font-family: letra2;
+			font-size: 70px;
+			color: #D577B1;
+		}
+		.b2{
+			position: absolute;
+			top: 350px;
+			left: 1150px;
+			width: 190px;
+			height: 70px;
+			background-color: #E9F5FF;
+			border-color: #ABD9FF;
+			border-width: 3px;
+			border-style: solid;
+		}
+		.tex2{
+			position: absolute;
+			top: -75px;
+			left: 15px;
+			font-family: letra2;
+			font-size: 70px;
+			color: #78B5CA;
+		}
+		.cua2{
+			position: absolute;
+			top: 50px;
+			left: 80px;
+			width: 1050px;
+			height: 560px;
+			background-color: white;
+			border-color: #D5F2FF;
+			border-width: 3px;
+			border-style: solid;
+
+		}
+		.rec{
+			position: absolute;
+			top: 280px;
+			left: 550px;
+			background-color: #ACD4E7;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+<div class="b1"><a href="file:///D:/Desktop/Tecnolog%C3%ADa/Cuarto%20Periodo%20Tecnolog%C3%ADa/Entrega%20Semana%2032%20Tecno/index.html">
+<p class="tex1"> INICIO</p></a>
+</div>
+<div class="b2"><a href="file:///D:/Desktop/Tecnolog%C3%ADa/Cuarto%20Periodo%20Tecnolog%C3%ADa/Clase%20S32/index1.html"> <p class="tex2"> MENÚ</p></a></div>
+<div class="cua2" id="cuadro2"></div>
+<div class="rec" id="recua" onclick="mover()">
+	<audio class="au" src="graba.mp3" id="soni"></audio>
+</div>
+
+<script>
+	function mover(){
+
+        soni.play();
+
+		var leftx= Math.floor((Math.random() * (1021-100)) +100);
+		var topy= Math.floor((Math.random() * (410-60)) +60);
+	    
+	    recua.style.left=leftx+"px";
+	    recua.style.top=topy+"px";
+
+	}
+</script>
+</body>
+</html>
